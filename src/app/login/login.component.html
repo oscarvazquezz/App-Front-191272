@@ -1,0 +1,18 @@
+
+<div style="text-align:center;">
+    <h1> Hola {{title}}</h1>
+    <br>
+    <div *ngFor = 'let user of users'>
+        <br>
+        <img [src]='user.picture.thumbnail'>
+        <h1 style="font-size: 18px;">Title :{{user.name.title}}</h1>
+        <h1 style="font-size: 18px;">Nombre Completo :{{user.name.first}} {{user.name.last}}</h1>
+        <h1 style="font-size: 18px;">Correo :{{user.email}}</h1>
+        <h1 style="font-size: 18px;">Numero telefonico :{{user.phone}}</h1>
+        <h1 style="font-size: 18px;">Genero :{{user.gender}}</h1>
+        <h1 style="font-size: 18px;">Ciudad :{{user.location.city}}</h1>
+        <h1 style="font-size: 18px;">Numero de la calle :{{user.location.street.number}}</h1>
+        <h1 style="font-size: 18px;">Nombre de la calle :{{user.location.street.name}}</h1>
+        <h1 style="font-size: 18px;">codigo postal :{{user.location.postcode}}</h1>
+    </div>
+</div>

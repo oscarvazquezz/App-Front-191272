@@ -1,0 +1,23 @@
+
+
+<div style="text-align:center;">
+    <h1> Hola {{title}}</h1>
+    
+    <br>
+    <div *ngFor = 'let dataDashboard of users'>
+        <br>
+        <img [src]='dataDashboard.picture.thumbnail'>
+        <h1 style="font-size: 18px;">Title :{{dataDashboard.name.title}}</h1>
+        <h1 style="font-size: 18px;">Nombre Completo :{{dataDashboard.name.first}} {{dataDashboard.name.last}}</h1>
+        <h1 style="font-size: 18px;">Fecha :{{dataDashboard.registered.date}} </h1>
+        <h1 style="font-size: 18px;">Edad :{{dataDashboard.registered.age}} años</h1>
+        <h1 style="font-size: 18px;">Correo :{{dataDashboard.email}}</h1>
+        <h1 style="font-size: 18px;">Numero telefonico :{{dataDashboard.phone}}</h1>
+        <h1 style="font-size: 18px;">Genero :{{dataDashboard.gender}}</h1>
+        <h1 style="font-size: 18px;">Ciudad :{{dataDashboard.location.city}}</h1>
+        <h1 style="font-size: 18px;">Numero de la calle :{{dataDashboard.location.street.number}}</h1>
+        <h1 style="font-size: 18px;">Nombre de la calle :{{dataDashboard.location.street.name}}</h1>
+        <h1 style="font-size: 18px;">codigo postal :{{dataDashboard.location.postcode}}</h1>
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+
+
+<div style="text-align:center;">
+    <h1> Hola {{title}}</h1>
+    <h1>info seed :{{valor['seed']}}</h1>
+    
+    <br>
+    <div *ngFor = 'let dataUsuario of users'>
+        <br>
+        <img [src]='dataUsuario .picture.thumbnail'>
+        <h1 style="font-size: 18px;">Title :{{dataUsuario .name.title}}</h1>
+        <h1 style="font-size: 18px;">Nombre Completo :{{dataUsuario .name.first}} {{dataUsuario .name.last}}</h1>
+        <h1 style="font-size: 18px;">Fecha :{{dataUsuario .registered.date}} </h1>
+        <h1 style="font-size: 18px;">Edad :{{dataUsuario.registered.age}} años</h1>
+        <h1 style="font-size: 18px;">Correo :{{dataUsuario .email}}</h1>
+        <h1 style="font-size: 18px;">Numero telefonico :{{dataUsuario .phone}}</h1>
+        <h1 style="font-size: 18px;">Genero :{{dataUsuario .gender}}</h1>
+        <h1 style="font-size: 18px;">Ciudad :{{dataUsuario .location.city}}</h1>
+        <h1 style="font-size: 18px;">Numero de la calle :{{dataUsuario .location.street.number}}</h1>
+        <h1 style="font-size: 18px;">Nombre de la calle :{{dataUsuario.location.street.name}}</h1>
+        <h1 style="font-size: 18px;">codigo postal :{{dataUsuario.location.postcode}}</h1>
+    </div>
+</div>
+
